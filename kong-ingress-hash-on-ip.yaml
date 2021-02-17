@@ -1,0 +1,8 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongIngress
+metadata:
+  name: demo-customization
+upstream:
+  hash_on: ip
+proxy:
+  path: /bar/
